@@ -1,5 +1,8 @@
 # BIP39
 Experimental project BIP39/Bip32/Bip44. This is a modified version [LostCoins](https://github.com/phrutis/LostCoins) 
+- The project needs the help of a programmer! 
+- We need to change the Derivation Path algorithm by replacing the 8-bit uint8_t transformations with fast ones. 
+- This will increase the speed ×1000. After acceleration, the code can be used for GPU
 ## Quick start
 - Сonvert addresses 1... into binary hashes RIPEMD160 use [b58dec](https://github.com/phrutis/LostCoins/blob/main/Others/b58dec.exe) command: ```b58dec.exe addresses.txt base160.bin```
 - It is important to sort the base160.bin file otherwise the Bloom search filter will not work as expected.
